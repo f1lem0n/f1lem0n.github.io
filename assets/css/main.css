@@ -1,4 +1,5 @@
 /* Colorscheme */
+
 :root {
     --light-txt-color: black;
     --light-bg-color: white;
@@ -12,6 +13,7 @@
 }
 
 /* Font */
+
 :root {
     --font-family-body: "Bookman Old Style", serif;
     --font-family-headings: "Calibri", "Helvetica", sans-serif;
@@ -82,6 +84,7 @@ h1>a {
     margin: 0 1rem;
 }
 
+
 /* Page */
 
 .page-container {
@@ -90,6 +93,7 @@ h1>a {
     min-height: 100vh;
     justify-content: space-between;
 }
+
 
 /* Side Panel */
 
@@ -145,11 +149,6 @@ li>a {
 
 
 /* Contents */
-
-.banner {
-    align-self: center;
-    height: 19rem;
-}
 
 .face {
     margin: 0 0 2rem auto;
@@ -250,6 +249,7 @@ tr:nth-child(even) {
     margin: 0 auto 100%;
 }
 
+
 /* Footer */
 
 .footer-container {
@@ -282,6 +282,7 @@ tr:nth-child(even) {
     text-align: right;
 }
 
+
 /* Effects */
 
 a:hover {
@@ -291,11 +292,13 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
 
+
     /* Header */
 
     .header-container>p {
         font-size: var(--font-size-l);
     }
+
 
     /* Page */
 
@@ -312,6 +315,7 @@ a:hover {
     .content-container>table {
         font-size: var(--font-size-l);
     }
+
 
     /* Menu */
 
