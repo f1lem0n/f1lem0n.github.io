@@ -35,7 +35,6 @@ echo "
 
 for f in $files; do
     title=$(echo $f | grep -o /../.\* | grep -o "[A-Za-z_.]\{3,\}")
-    echo $title
     lang=$(echo $f | grep -o /../ | grep -o [a-z].)
     echo "
             <tr>

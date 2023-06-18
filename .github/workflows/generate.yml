@@ -21,6 +21,6 @@ jobs:
           git add .
           git commit --allow-empty -m"generate portfolio page"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git -f push
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
