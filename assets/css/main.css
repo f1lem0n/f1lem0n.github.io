@@ -159,6 +159,7 @@ li>a {
     flex-direction: column;
     width: 60%;
     margin: 10rem auto 3rem;
+    padding-right: 2rem;
     background-color: var(--light-bg-color);
 }
 

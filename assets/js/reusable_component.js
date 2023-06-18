@@ -6,7 +6,6 @@ class HeaderEN extends HTMLElement {
             <div class="header-container">
                 <div class="logo">
                     <h1><a href="/en/home.html">Filip Hajdyła</a></h1>
-                    <!-- <img src="../assets/img/fh.jpg" alt="logo" /> -->
                 </div>
                 <p>Data analysis and visualization</p>
             </div>
@@ -23,7 +22,6 @@ class HeaderPL extends HTMLElement {
             <div class="header-container">
                 <div class="logo">
                     <h1><a href="/pl/home.html">Filip Hajdyła</a></h1>
-                    <!-- <img src="../assets/img/fh.jpg" alt="logo" /> -->
                 </div>
                 <p>Analiza danych i wizualizacja</p>
             </div>
@@ -41,7 +39,7 @@ class SidePanelEN extends HTMLElement {
         this.innerHTML = `
         <div class="side-panel">
             <div class="side-panel-content">
-                <h3>Menu</h2>
+                <h2>Menu</h2>
                 <ul class="menu">
                     <li><a href="/en/home.html">Home</a></li>
                     <li><a href="/en/about.html">About me</a></li>
