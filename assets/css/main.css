@@ -6,6 +6,9 @@
     --light-bg-color3: #e4e4e4;
     --light-footer-bg-color: #1b1b1b;
     --light-footer-txt-color: #afafaf;
+    --font-size-l: 20px;
+    --font-size-m: 16px;
+    --font-size-s: 14px;
 }
 
 /* Font */
@@ -26,7 +29,7 @@ h6 {
 body {
     font-family: var(--font-family-body);
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font-size-m);
     line-height: 1.5rem;
     height: 100%;
     margin: 0;
@@ -114,7 +117,6 @@ li>a {
 }
 
 .side-panel-content>h2 {
-    font-size: 1.5rem;
     margin-top: 4rem;
 }
 
@@ -171,7 +173,7 @@ li>a {
     list-style: none;
 }
 
-.content-container>table {
+.table-container>table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     line-height: 2rem;
@@ -243,6 +245,11 @@ tr:nth-child(even) {
     border: black 1px solid;
 }
 
+.table-container {
+    width: 100%;
+    margin: 0 auto 100%;
+}
+
 /* Footer */
 
 .footer-container {
@@ -259,7 +266,7 @@ tr:nth-child(even) {
     flex-direction: column;
     justify-content: space-between;
     margin: 2rem 2rem 1rem;
-    font-size: 10px;
+    font-size: var(--font-size-s);
 }
 
 .bi-quote {
@@ -283,14 +290,30 @@ a:hover {
 
 
 @media screen and (max-width: 1024px) {
+
+    /* Header */
+
+    .header-container>p {
+        font-size: var(--font-size-l);
+    }
+
+    /* Page */
+
     .page-container {
         flex-direction: column;
     }
 
     .content-container {
         margin-top: 14rem;
-        padding: 0;
+        padding: 2rem;
+        width: 80%;
     }
+
+    .content-container>table {
+        font-size: var(--font-size-l);
+    }
+
+    /* Menu */
 
     .side-panel {
         height: 10rem;
@@ -310,6 +333,7 @@ a:hover {
         margin: 5rem 0 0 0;
         align-items: center;
         justify-content: space-between;
+        font-size: var(--font-size-l);
     }
 
     .side-panel-content>h2 {
@@ -331,4 +355,23 @@ a:hover {
         display: none;
     }
 
+
+    /* Footer */
+
+    .footer-container {
+        height: 20rem;
+    }
+
+    .footer-container>.legal-info {
+        font-size: var(--font-size-m);
+    }
+
+    .footer-container>.media {
+        font-size: var(--font-size-l);
+        line-height: 4rem;
+    }
+
+    .bi-quote {
+        font-size: 4rem;
+    }
 }
