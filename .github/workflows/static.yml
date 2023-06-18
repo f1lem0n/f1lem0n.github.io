@@ -15,8 +15,11 @@ jobs:
       - uses: actions/checkout@v3
       - run: bash generate.sh
       - run: |
-          git config user.email ${{ vars.EMAIL }}
-          git config user.name ${{ vars.USERNAME }}
+          git config user.email "no-reply@github.com"
+          git config user.name "GitHub Actions"
           git add .
           git commit -m"generate portfolio page"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
