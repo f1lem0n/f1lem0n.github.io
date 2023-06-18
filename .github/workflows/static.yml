@@ -136,8 +136,8 @@ jobs:
       - name: Push to the repository
         shell: bash
         run: |
-          git status
+          git remote -v
           git status
           git add .
           git commit -m"update portfolio page"
-          git push origin HEAD:main
+          git push
