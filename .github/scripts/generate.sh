@@ -49,6 +49,7 @@ echo "
         </div>
         </div>
     </div>
+    <footer-pl></footer-pl>
 </body>
 
 </html>
@@ -97,6 +98,7 @@ echo "
         </div>
         </div>
     </div>
+    <footer-en></footer-en>
 </body>
 
 </html>
