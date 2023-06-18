@@ -60,7 +60,7 @@ jobs:
                           <th>Plik</th>
                           <th>Język</th>
                       </tr>
-          " > pl/portfolio.html
+          " > /pl/portfolio.html
 
           for f in $files; do
               title=$(echo $f | grep -o /../.\* | grep -o "[A-Za-z_.]\{3,\}")
@@ -70,7 +70,7 @@ jobs:
                       <tr>
                           <td><a href=\"/$f\">$title</a></td>
                           <td>$lang</td>
-                      </tr>" >> pl/portfolio.html
+                      </tr>" >> /pl/portfolio.html
           done
 
           echo "
@@ -80,7 +80,7 @@ jobs:
           </body>
 
           </html>
-          " >> pl/portfolio.html
+          " >> /pl/portfolio.html
 
 
           # EN
@@ -107,7 +107,7 @@ jobs:
                           <th>File</th>
                           <th>Language</th>
                       </tr>
-          " > en/portfolio.html
+          " > /en/portfolio.html
 
           for f in $files; do
               title=$(echo $f | grep -o /../.\* | grep -o "[A-Za-z_.]\{3,\}")
@@ -116,7 +116,7 @@ jobs:
                       <tr>
                           <td><a href=\"/$f\">$title</a></td>
                           <td>$lang</td>
-                      </tr>" >> en/portfolio.html
+                      </tr>" >> /en/portfolio.html
           done
 
           echo "
@@ -126,7 +126,7 @@ jobs:
           </body>
 
           </html>
-          " >> en/portfolio.html
+          " >> /en/portfolio.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
