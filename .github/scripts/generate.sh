@@ -26,6 +26,7 @@ echo "
     <div class="page-container">
         <side-panel-pl></side-panel-pl>
         <div class="content-container">
+        <div class="table-container">
         <table>
             <tr>
                 <th>Plik</th>
@@ -45,6 +46,7 @@ done
 
 echo "
         </table>
+        </div>
         </div>
     </div>
 </body>
@@ -72,6 +74,7 @@ echo "
     <div class="page-container">
         <side-panel-en></side-panel-en>
         <div class="content-container">
+        <div class="table-container">
         <table>
             <tr>
                 <th>File</th>
@@ -91,6 +94,7 @@ done
 
 echo "
         </table>
+        </div>
         </div>
     </div>
 </body>
