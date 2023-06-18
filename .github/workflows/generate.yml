@@ -19,7 +19,7 @@ jobs:
           git config user.email "no-reply@github.com"
           git config user.name "GitHub Actions"
           git add .
-          git commit -m"generate portfolio page"
+          git commit --allow-empty -m"generate portfolio page"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git -f push
         env:
