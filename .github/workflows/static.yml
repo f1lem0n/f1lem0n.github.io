@@ -34,10 +34,8 @@ jobs:
       - name: Setup portfolio page
         shell: bash
         run: |
-          ls -la
-          cd 
-          ls -la
-          ls -la /
+          ls -la pl
+          
           files=$(find portfolio -type f)
           
           # PL
@@ -131,6 +129,8 @@ jobs:
 
           </html>
           " >> en/portfolio.html
+          
+          ls -la pl
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
