@@ -11,15 +11,16 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    steps:       
+    steps:
       - uses: actions/checkout@v3
-      - run: bash generate.sh
       - run: |
+          ls -la
+          bash .github/scripts/generate.sh
           git config user.email "no-reply@github.com"
           git config user.name "GitHub Actions"
           git add .
           git commit -m"generate portfolio page"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push
+          git -f push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
