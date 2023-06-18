@@ -137,7 +137,6 @@ jobs:
         shell: bash
         run: |
           git status
-          git remote set-url origin ${{ secrets.ssh }}
           git status
           git add .
           git commit -m"update portfolio page"
