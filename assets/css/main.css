@@ -11,7 +11,7 @@
 /* Font */
 :root {
     --font-family-body: "Bookman Old Style", serif;
-    --font-family-headings: "Helvetica", sans-serif;
+    --font-family-headings: "Calibri", "Helvetica", sans-serif;
 }
 
 h1,
@@ -147,6 +147,11 @@ li>a {
 
 /* Contents */
 
+.banner {
+    align-self: center;
+    height: 19rem;
+}
+
 .face {
     margin: 0 0 2rem auto;
     height: 15rem;
@@ -276,5 +281,5 @@ tr:nth-child(even) {
 /* Effects */
 
 a:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
 }
