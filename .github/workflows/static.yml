@@ -136,9 +136,12 @@ jobs:
       - name: Push to the repository
         shell: bash
         run: |
-          git remote set-url origin ${{ secrets.ssh }}
+          git remote set-url origin ${{ vars.SSH }}
+          git config --global user.email ${{ vars.EMAIL }}
+          git config --global user.name ${{ vars.USERNAME }}
           git remote -v
           git status
           git add .
+          git status
           git commit -m"update portfolio page"
           git push
