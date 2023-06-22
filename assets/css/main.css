@@ -26,7 +26,18 @@ h4,
 h5,
 h6 {
     font-family: var(--font-family-headings);
+    font-weight: 400;
 }
+
+h1 {
+    font-size: 3rem;
+}
+
+.logo>h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
 
 body {
     font-family: var(--font-family-body);
@@ -309,6 +320,7 @@ a:hover {
 @media screen and (max-width: 1536px) {
     .section-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .section-container:nth-child(even) {
@@ -324,10 +336,12 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 1024px) {
-
-
+@media screen and (max-width: 1124px) {
     /* Header */
+
+    .header-container {
+        /* box-shadow: black 0 0 5px; */
+    }
 
     .header-container>p {
         font-size: var(--font-size-l);
@@ -359,12 +373,13 @@ a:hover {
     /* Menu */
 
     .side-panel {
-        height: 10rem;
+        height: 11rem;
         width: 100%;
         position: fixed;
         top: 0;
         left: 0;
         padding: 0;
+        box-shadow: black 0 0 5px;
     }
 
     .side-panel-content {
@@ -373,7 +388,6 @@ a:hover {
         left: 0;
         height: 4rem;
         width: inherit;
-        margin: 5rem 0 0 0;
         align-items: center;
         justify-content: space-between;
         font-size: var(--font-size-l);
