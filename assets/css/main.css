@@ -339,10 +339,6 @@ a:hover {
 @media screen and (max-width: 1124px) {
     /* Header */
 
-    .header-container {
-        /* box-shadow: black 0 0 5px; */
-    }
-
     .header-container>p {
         font-size: var(--font-size-l);
     }
@@ -430,5 +426,11 @@ a:hover {
 
     .bi-quote {
         font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container>.media {
+        display: none;
     }
 }
