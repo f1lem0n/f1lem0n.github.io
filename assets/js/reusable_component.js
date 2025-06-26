@@ -44,7 +44,6 @@ class SidePanelEN extends HTMLElement {
                     <li><a href="/en/home.html">Home</a></li>
                     <li><a href="/en/about.html">About me</a></li>
                     <li><a href="/en/portfolio.html"></a>Portfolio</li>
-                    <li><a href="https://forms.gle/wZZiPWteh5HEKDPu9" target="_blank">Request analysis</a></li>
                 </ul>
                 <ul class="lang">
                     <hr>
@@ -93,7 +92,6 @@ class SidePanelPL extends HTMLElement {
                     <li><a href="/pl/home.html">Strona Główna</a></li>
                     <li><a href="/pl/about.html">O mnie</a></li>
                     <li><a href="/pl/portfolio.html">Portfolio</a></li>
-                    <li><a href="https://forms.gle/cp2EDBtC6ZAbWQHx8" target="_blank">Poproś o analizę</a></li>
                 </ul>
                 <ul class="lang">
                     <hr>
