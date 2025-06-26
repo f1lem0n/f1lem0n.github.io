@@ -7,7 +7,7 @@ class HeaderEN extends HTMLElement {
                 <div class="logo">
                     <h1><a href="/en/home.html">Filip Hajdyła</a></h1>
                 </div>
-                <p>Data analysis and visualization</p>
+                <p>Bioinformatics and Biostatistics Specialist</p>
             </div>
             `
     }
@@ -23,7 +23,7 @@ class HeaderPL extends HTMLElement {
                 <div class="logo">
                     <h1><a href="/pl/home.html">Filip Hajdyła</a></h1>
                 </div>
-                <p>Analiza danych i wizualizacja</p>
+                <p>Specjalista Bioinformatyk i Biostatystyk</p>
             </div>
             `
     }
@@ -43,7 +43,7 @@ class SidePanelEN extends HTMLElement {
                 <ul class="menu">
                     <li><a href="/en/home.html">Home</a></li>
                     <li><a href="/en/about.html">About me</a></li>
-                    <li><a href="/en/portfolio.html">Portfolio</a></li>
+                    <li><a href="/en/portfolio.html"></a>Portfolio</li>
                     <li><a href="https://forms.gle/wZZiPWteh5HEKDPu9" target="_blank">Request analysis</a></li>
                 </ul>
                 <ul class="lang">
