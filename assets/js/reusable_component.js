@@ -43,7 +43,7 @@ class SidePanelEN extends HTMLElement {
                 <ul class="menu">
                     <li><a href="/en/home.html">Home</a></li>
                     <li><a href="/en/about.html">About me</a></li>
-                    <li><a href="/en/portfolio.html"></a>Portfolio</li>
+                    <li><a href="/en/portfolio.html">Portfolio</a></li>
                 </ul>
                 <ul class="lang">
                     <hr>
